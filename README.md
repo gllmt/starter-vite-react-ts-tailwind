@@ -1,4 +1,4 @@
-# My Vite React TypeScript Tailwind Project
+# My Starter Vite React TypeScript Tailwind
 
 This project is a boilerplate for a modern web application using Vite.js, React, TypeScript, and Tailwind CSS.
 
@@ -16,16 +16,28 @@ Make sure you have `pnpm` installed globally. If not, you can install it using n
 npm install -g pnpm
 ```
 
+or if you use yarn:
+
+```bash
+yarn global add pnpm
+```
+
+or if you use macos (highly recommended):
+
+```bash
+brew install pnpm
+```
+
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/my-vite-app.git
+git clone https://github.com/gllmt/starter-vite-react-ts-tailwind.git
 ```
 
 ### Navigate to the project directory:
 
 ```bash
-cd my-vite-app
+cd starter-vite-react-ts-tailwind
 ```
 
 ### Install the dependencies:
@@ -49,7 +61,7 @@ pnpm build
 ### Project Structure
 
 ```bash
-my-vite-app/
+starter-vite-react-ts-tailwind/
 ├── public/
 │   └── vite.svg
 ├── src/
