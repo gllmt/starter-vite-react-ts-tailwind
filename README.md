@@ -1,4 +1,6 @@
-# My Starter Vite React TypeScript Tailwind
+# My Starter Vite React TypeScript Tailwind CSS
+
+![Starter](https://res.cloudinary.com/dxgf6ohvo/image/upload/v1729011020/Perso/clwxskvustbokohi1a91.png "Starter")
 
 This project is a boilerplate for a modern web application using Vite.js, React, TypeScript, and Tailwind CSS.
 
