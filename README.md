@@ -1,104 +1,80 @@
-# My Starter Vite React TypeScript Tailwind CSS
+# Vite React TypeScript Tailwind Starter
 
-![Starter](https://res.cloudinary.com/dxgf6ohvo/image/upload/v1729012960/starter-vite-react-min_kvv2lx.png "Starter")
+Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript, Tailwind CSS v4, ESLint, and pnpm in a small project you can fork, rename, and build from without deleting a large demo app first.
 
-This project is a boilerplate for a modern web application using Vite.js, React, TypeScript, and Tailwind CSS.
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
+![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=flat-square)
 
-It is set up with `pnpm` for package management.
+## Features
+
+- Vite 8 app shell with React 19 and TypeScript 6.
+- Tailwind CSS v4 wired through `@tailwindcss/postcss`.
+- Strict TypeScript project references for app and Vite config code.
+- ESLint flat config with TypeScript, React Hooks, and React Refresh rules.
+- pnpm lockfile and workspace settings committed for reproducible installs.
+- Minimal `src/App.tsx` surface so the first real feature can replace it cleanly.
+
+## Requirements
+
+- Node.js compatible with the installed Vite version: `^20.19.0` or `>=22.12.0`.
+- pnpm.
 
 ## Getting Started
 
-Follow these instructions to set up and run the project locally.
-
-### Prerequisites
-
-Make sure you have `pnpm` installed globally. If not, you can install it using npm:
-
-```bash
-npm install -g pnpm
-```
-
-or if you use yarn:
-
-```bash
-yarn global add pnpm
-```
-
-or if you use macos (highly recommended):
-
-```bash
-brew install pnpm
-```
-
-### Clone the repository:
-
 ```bash
 git clone https://github.com/gllmt/starter-vite-react-ts-tailwind.git
-```
-
-### Navigate to the project directory:
-
-```bash
 cd starter-vite-react-ts-tailwind
-```
-
-### Install the dependencies:
-
-```bash
 pnpm install
-```
-
-### Start the development server:
-
-```bash
 pnpm dev
 ```
 
-### Build the project for production:
+Then open the local URL printed by Vite.
+
+## Commands
 
 ```bash
-pnpm build
+pnpm dev      # start the Vite dev server
+pnpm build    # typecheck and build for production
+pnpm preview  # preview the production build locally
+pnpm lint     # run ESLint
 ```
 
-### Project Structure
+## Project Layout
 
-```bash
+```text
 starter-vite-react-ts-tailwind/
 ├── public/
-│   └── vite.svg
 ├── src/
 │   ├── assets/
-│   ├── components/
 │   ├── App.tsx
 │   ├── index.css
 │   ├── main.tsx
 │   └── vite-env.d.ts
+├── eslint.config.js
 ├── index.html
 ├── package.json
 ├── pnpm-lock.yaml
 ├── postcss.config.js
-├── tailwind.config.js
+├── tsconfig.app.json
 ├── tsconfig.json
+├── tsconfig.node.json
 └── vite.config.ts
 ```
 
-### Customization
+## Customization
 
-You can customize the project by editing the following files:
+- Edit `src/App.tsx` to replace the starter screen.
+- Edit `src/index.css` for global Tailwind imports and base styles.
+- Edit `postcss.config.js` if you need additional PostCSS plugins.
+- Edit `vite.config.ts` for Vite plugins, aliases, and build options.
+- Edit `eslint.config.js` to tune lint rules for your team.
 
-- tailwind.config.js: Tailwind CSS configuration.
-- postcss.config.js: PostCSS configuration.
-- tsconfig.json: TypeScript configuration.
-- vite.config.ts: Vite configuration.
+## License
 
-### License
+Licensed under the [GNU AGPL-3.0](LICENSE). You are free to use, study, modify, and redistribute it. Any distributed or network-hosted fork must also be released under the AGPL-3.0, which keeps derivatives open.
 
-This project is licensed under the MIT License.
-
-### Acknowledgements
-
-- [Vite](https://vitejs.dev/)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [pnpm](https://pnpm.io/)
+© 2026 Pierre Guillemot

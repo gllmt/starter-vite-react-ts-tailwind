@@ -1,7 +1,9 @@
 {
   "name": "starter-vite-react-ts-tailwind",
+  "description": "Vite React TypeScript Tailwind starter template.",
   "private": true,
   "version": "0.0.0",
+  "license": "AGPL-3.0-only",
   "type": "module",
   "scripts": {
     "dev": "vite",
