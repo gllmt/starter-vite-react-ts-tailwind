@@ -1,3 +1,7 @@
 allowBuilds:
   "@tailwindcss/oxide": true
   esbuild: true
+
+# 1.2.0 expects @emnapi/* 2 alpha, while Rolldown 1.1.5 still pins 1.11.1.
+overrides:
+  "@napi-rs/wasm-runtime": 1.1.6

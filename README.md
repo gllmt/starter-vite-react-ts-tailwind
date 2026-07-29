@@ -1,6 +1,6 @@
 # Vite React TypeScript Tailwind Starter
 
-Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript, Tailwind CSS v4, ESLint, and pnpm in a small project you can fork, rename, and build from without deleting a large demo app first.
+Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript, Tailwind CSS v4, Oxlint, and pnpm in a small project you can fork, rename, and build from without deleting a large demo app first.
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
@@ -11,10 +11,10 @@ Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript
 
 ## Features
 
-- Vite 8 app shell with React 19 and TypeScript 6.
+- Vite 8 app shell with React 19 and TypeScript 7.
 - Tailwind CSS v4 wired through `@tailwindcss/postcss`.
-- Strict TypeScript project references for app and Vite config code.
-- ESLint flat config with TypeScript, React Hooks, and React Refresh rules.
+- Strict TypeScript project references for both app and Vite config code.
+- Native Oxlint rules for JavaScript, TypeScript, React Hooks, React Compiler, and React Refresh—without an ESLint runtime.
 - pnpm lockfile and workspace settings committed for reproducible installs.
 - Minimal `src/App.tsx` surface so the first real feature can replace it cleanly.
 
@@ -40,13 +40,25 @@ Then open the local URL printed by Vite.
 pnpm dev      # start the Vite dev server
 pnpm build    # typecheck and build for production
 pnpm preview  # preview the production build locally
-pnpm lint     # run ESLint
+pnpm lint     # run Oxlint
 ```
+
+## Quality Checks
+
+`pnpm lint` runs Oxlint with the native `eslint`, `typescript`, and `react` rule sets configured in `.oxlintrc.json`. The committed configuration:
+
+- treats correctness diagnostics as errors;
+- retains the TypeScript restrictions previously covered by TypeScript ESLint;
+- checks the Rules of Hooks, effect dependencies, React Compiler compatibility, and Vite-safe component exports;
+- fails on warnings and unused disable directives.
+
+`pnpm build` first runs `tsc -b` with TypeScript 7, then creates the production bundle with Vite.
 
 ## Project Layout
 
 ```text
 starter-vite-react-ts-tailwind/
+├── .oxlintrc.json
 ├── public/
 ├── src/
 │   ├── assets/
@@ -54,10 +66,11 @@ starter-vite-react-ts-tailwind/
 │   ├── index.css
 │   ├── main.tsx
 │   └── vite-env.d.ts
-├── eslint.config.js
 ├── index.html
+├── LICENSE
 ├── package.json
 ├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
 ├── postcss.config.js
 ├── tsconfig.app.json
 ├── tsconfig.json
@@ -71,7 +84,7 @@ starter-vite-react-ts-tailwind/
 - Edit `src/index.css` for global Tailwind imports and base styles.
 - Edit `postcss.config.js` if you need additional PostCSS plugins.
 - Edit `vite.config.ts` for Vite plugins, aliases, and build options.
-- Edit `eslint.config.js` to tune lint rules for your team.
+- Edit `.oxlintrc.json` to tune lint rules for your team.
 
 ## License
 
