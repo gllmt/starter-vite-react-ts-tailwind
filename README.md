@@ -14,20 +14,21 @@ Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript
 - Vite 8 app shell with React 19 and TypeScript 7.
 - Tailwind CSS v4 wired through `@tailwindcss/postcss`.
 - Strict TypeScript project references for both app and Vite config code.
-- Native Oxlint rules for JavaScript, TypeScript, React Hooks, React Compiler, and React Refresh—without an ESLint runtime.
+- Native Oxlint rules for JavaScript, TypeScript, React Hooks, React Compiler, and React Refresh, without an ESLint runtime.
 - pnpm lockfile and workspace settings committed for reproducible installs.
 - Minimal `src/App.tsx` surface so the first real feature can replace it cleanly.
 
 ## Requirements
 
-- Node.js compatible with the installed Vite version: `^20.19.0` or `>=22.12.0`.
-- pnpm.
+- Node.js 24.22.1 or a newer 24.x release (`^24.22.1`). The `.nvmrc` file pins 24.22.1.
+- pnpm 12.15.0 (pinned in `packageManager`).
 
 ## Getting Started
 
 ```bash
 git clone https://github.com/gllmt/starter-vite-react-ts-tailwind.git
 cd starter-vite-react-ts-tailwind
+# If you use nvm: nvm install && nvm use
 pnpm install
 pnpm dev
 ```
