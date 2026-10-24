@@ -34,6 +34,18 @@
     "typescript/triple-slash-reference": "error",
     "react/rules-of-hooks": "error",
     "react/exhaustive-deps": "warn",
+    "react/purity": "error",
+    "react/immutability": "error",
+    "react/refs": "error",
+    "react/set-state-in-render": "error",
+    "react/set-state-in-effect": "error",
+    "react/static-components": "error",
+    "react/use-memo": "error",
+    "react/preserve-manual-memoization": "error",
+    "react/globals": "error",
+    "react/error-boundaries": "error",
+    "react/incompatible-library": "error",
+    "react/unsupported-syntax": "error",
     "react/only-export-components": [
       "warn",
       {
