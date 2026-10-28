@@ -20,7 +20,7 @@ Minimal frontend starter for modern React apps. It ships Vite, React, TypeScript
 
 ## Requirements
 
-- Node.js 24.22.1 or a newer 24.x release (`^24.22.1`). The `.nvmrc` file pins 24.22.1.
+- Node.js 26.13.0 or a newer 26.x release (`^26.13.0`). The `.nvmrc` file pins 26.13.0 LTS.
 - pnpm 12.15.0 (pinned in `packageManager`).
 
 ## Getting Started
